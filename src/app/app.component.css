@@ -1,0 +1,433 @@
+p {
+    font-family: Lato;
+  }
+  
+  section {
+    border: 3px solid #f00;
+    margin: 10%;
+  }
+  
+  .grid-slide img {
+    float: left;  
+    width: 33%;
+    padding: 1px;
+  }
+
+
+/**
+ * 1. Center the content. Yes, that's a bit opinionated.
+ * 2. Use `max-width` instead `width`
+ * 3. Add padding on the sides.
+ */
+ .wrapper {
+  margin-right: auto; /* 1 */
+  margin-left:  auto; /* 1 */
+
+  max-width: 960px; /* 2 */
+
+  padding-right: 10px; /* 3 */
+  padding-left:  10px; /* 3 */
+}
+
+
+ /**
+ * The problem with this one occurs
+ * when the browser window is smaller than 960px.
+ * The browser then adds a horizontal scrollbar to the page.
+ */
+.width {
+  width: 960px;
+  margin-left: auto;
+  margin-right: auto;
+  border: 3px solid #73AD21;
+}
+
+/**
+* Using max-width instead, in this situation,
+* will improve the browser's handling of small windows.
+* This is important when making a site usable on small devices.
+*/
+.max-width {
+  max-width: 960px;
+  margin-left: auto;
+  margin-right: auto;
+  border: 3px solid #73AD21;
+}
+
+/**
+* Credits for the tip: W3Schools
+* https://www.w3schools.com/css/css_max-width.asp
+*/
+  
+ .myCarousel { 
+    box-shadow: 0 0 20px rgba(0,0,0,0.4);
+    height: 240px;
+    margin: 50px auto; 
+    overflow: hidden;	
+    padding: 10px;
+    position: relative; 
+    width: 320px; 
+  }
+  
+  .myCarousel > div { 
+      position: absolute; 
+      top: 10px; 
+      left: 10px; 
+      right: 10px; 
+      bottom: 10px; 
+  }
+  
+  
+  .myCarousel ul {
+  width: 20000em;
+  position: absolute;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  }
+  
+  
+  .carousel li {
+  float: left;
+  }
+  
+  
+  .overlay {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 600px;
+    width: 900px;
+    padding: 10px;
+    background: gray;
+  }
+  
+  
+  .carousel-inner {
+    width: 300px;
+    margin: 0 auto;
+  }
+  
+  
+  .slideshow { 
+      margin: 50px auto; 
+      position: relative; 
+      overflow: hidden;	
+      width: 240px; 
+      height: 180px; 
+      padding: 10px; 
+      box-shadow: 0 0 20px rgba(0,0,0,0.4); 
+  }
+  
+  .slideshow > div { 
+      position: absolute; 
+      top: 10px; 
+      left: 10px; 
+      right: 10px; 
+      bottom: 10px; 
+  }
+  
+  
+  .mySlider { 
+    margin: 50px auto; 
+    position: relative; 
+    overflow: hidden;	
+    width: 320px; 
+    height: 240px; 
+    padding: 10px; 
+    box-shadow: 0 0 20px rgba(0,0,0,0.4); 
+}
+
+.mySlider > div { 
+    position: absolute; 
+    top: 10px; 
+    left: 10px; 
+    right: 10px; 
+    bottom: 10px; 
+}
+
+
+.mySlider ul {
+width: 20000em;
+position: absolute;
+list-style: none;
+margin: 0;
+padding: 0;
+}
+
+
+.slider li {
+float: left;
+}
+
+
+
+.slider-inner {
+  width: 300px;
+  margin: 0 auto;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 40px;
+  width: 80%;
+  color: #333;
+  background: #419be0;
+}
+
+
+
+
+.sliderpanel{
+	width: 100%;
+	height: 100%;
+	display: block;
+}
+.myslider{
+	display: block;
+	height: 100%;
+}
+.myslider .item {
+  height: 100vh;
+  min-height: 300px;
+  background: no-repeat center center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-position: top;
+}
+.myslider .carousel-control {
+    position: absolute;
+    top: 40%;
+    width: 40px;
+    height: 40px;
+    margin-top: -20px;
+    font-size: 30px;
+    font-weight: 100;
+    line-height: 30px;
+    color: #ffffff;
+    text-align: center;
+    background: #222222;
+    border: 3px solid #ffffff;
+    -webkit-border-radius: 23px;
+    -moz-border-radius: 23px;
+    border-radius: 23px;
+    opacity: 0.5;
+    filter: alpha(opacity=50);
+}
+.myslider .carousel-control.left {
+    left: 10px
+}
+.myslider .carousel-control.right {
+    right: 10px
+}
+
+
+.carousel-control {
+  width: 30px;
+  height: 30px;
+  top: -35px;
+
+}
+.left.carousel-control {
+  right: 30px;
+  left: inherit;
+}
+.carousel-control .glyphicon-chevron-left, 
+.carousel-control .glyphicon-chevron-right {
+  font-size: 12px;
+  background-color: #fff;
+  line-height: 30px;
+  text-shadow: none;
+  color: #333;
+  border: 1px solid #ddd;
+}
+
+.pic-wrapper{
+  display: inline-block;
+  width: 84px;
+  height: 84px;
+  background: 
+    linear-gradient(-179deg, rgba(244, 244, 244, 0.5) 0%, rgba(192, 192, 192, 0.5) 100%),
+    var(--img) center/cover;
+  border-radius: 140px;
+  box-shadow: 
+   0 5px 10px 0px rgba(0,0,0,0.22), 
+   0 10px 13px 0px rgba(0,0,0,0.34), 
+   inset 0 18px 18px 0 rgba(255,255,255,0.35), 
+   inset 0 -18px 18px 0 rgba(0,0,0,0.10);
+}
+
+#slideshow {
+  margin: 80px auto;
+  position: relative;
+  width: 240px;
+  height: 240px;
+  padding: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+}
+
+#slideshow > div {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  right: 10px;
+  bottom: 10px;
+}
+
+.fadein { position:relative; width:500px; height:332px; }
+.fadein img { position:absolute; left:0; top:0; }
+
+
+
+
+    /** Carousel Controls **/
+  .carousel-control-prev, .carousel-control-next {
+  position: absolute;
+  top: 200px;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  background: #4E443C;
+  color: #fff;
+  text-decoration: none;
+  text-shadow: 0 0 1px #000;
+  font: 24px/27px Arial, sans-serif;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  border-radius: 30px;
+  -webkit-box-shadow: 0 0 2px #999;
+  -moz-box-shadow: 0 0 2px #999;
+  box-shadow: 0 0 2px #999;
+  }
+  
+  
+  .carousel-control-prev {
+  left: -50px;
+  }
+  .carousel-control-next {
+  right: -50px;
+  }
+  .carousel-control-prev:hover span, .carousel-control-next:hover span {
+  display: block;
+  }
+  
+  .carousel-wrapper {
+  margin: 20px auto;
+  position: relative;
+  border: 10px solid #fff;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 0 2px #999;
+  -moz-box-shadow: 0 0 2px #999;
+  box-shadow: 0 0 2px #999;
+  }
+  .carousel-wrapper .photo-credits {
+  position: absolute;
+  right: 15px;
+  bottom: 0;
+  font-size: 13px;
+  color: #fff;
+  text-shadow: 0 0 1px rgba(0, 0, 0, 0.85);
+  opacity: .66;
+  }
+  .carousel-wrapper .photo-credits a {
+  color: #fff;
+  }
+  
+  .items {
+    max-width: 300px;
+    height: 300px;
+    background: yellowgreen;
+
+  }
+
+  #left,  #right {
+     margin: 30px;
+     
+
+  }
+  
+  .slick-slide {  position: relative;}.caption {  position: absolute;  right: 0;  bottom: 0;  padding: 15px;  min-height: 38px;  background-color: rgba(255, 255, 255, 0.5);  z-index: 50;}
+  
+  #slider {background: white; height: 227px; overflow: hidden;
+           position: relative; margin: 50px 0;}
+  
+  .slidesjs  {padding: 40px 30px; width: 900px; float: left; position: relative; }
+  
+  .slides   {padding: 40px 30px; width: 900px; float: left; position: relative; }
+  
+  #slider-stopper { position: absolute; top: 1px; right: 20px; background: #ac0000; color: white; 
+             padding: 3px 8px; font-size: 10px; text-transform: uppercase; z-index: 1000; }
+  
+  
+  /*!
+   * Bootstrap v3.3.1 (http://getbootstrap.com)
+   * Copyright 2011-2014 Twitter, Inc.
+   * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+   *//*! normalize.css v3.0.2 | MIT License | git.io/normalize */html{font-family:sans-serif;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%}
+   body{margin:0}article,aside,details,figcaption,figure,footer,header,hgroup,main,menu,nav,section,summary{display:block}audio,canvas,progress,video{display:inline-block;vertical-align:baseline}audio:not([controls]){display:none;height:0}[hidden],template{display:none}a{background-color:transparent}
+    
+  
+  .overlay {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 200px;
+    width: 200px;
+    background: gray;
+  }
+  
+  body {
+    padding: 20px;
+    font-family: Helvetica;
+    background-color: #20262e;
+  }
+  
+  ul {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+    grid-gap: 10px;
+  }
+  
+  
+  .info {
+    text-align: center;
+    font-size: 13px;
+    padding-top: 20px;
+    color: #ff0000;
+  }
+  
+  .myCarousel_01 { 
+    box-shadow: 0 0 20px rgba(0,0,0,0.4);
+    height: 240px;
+    margin: 50px auto; 
+    overflow: hidden;	
+    padding: 10px;
+    position: relative; 
+    width: 320px; 
+  }
+  
+  .myCarousel_01 > div { 
+      position: absolute; 
+      top: 10px; 
+      left: 10px; 
+      right: 10px; 
+      bottom: 10px; 
+  }
+  
+  
+  .myCarousel_01 ul {
+  width: 20000em;
+  position: absolute;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  }
+
+  
